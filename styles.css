@@ -1,0 +1,256 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: "Jost", serif;
+}
+
+h1 {
+    font-size:3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.2em;
+}
+
+header, .links, .files-all, .files-content, .productive, .productive-content, .productive-profile, .earlyAccess, .earlyAccess-content, .footer-info, .footer-aboutUs, .footer-contactUs, .files-input {
+    display:flex;
+}
+
+header, .files-all, .productive, .earlyAccess, .footer-info {
+    justify-content: space-between;
+}
+
+.files, .productive,.earlyAccess, .footer {
+    padding:6em;
+}
+
+.files-all {
+    align-items: center;
+}
+
+.links {
+    gap:3em;
+}
+
+.files-image > img, .productive-image > img  {
+    width:40em;
+}
+
+.files-content, .productive-content, .earlyAccess-content, .footer-aboutUs, .footer-contactUs {
+    flex-direction: column;
+    gap:1em;
+}
+
+.files-input {
+    gap:1em;
+}
+
+.files-input > input, .earlyAccess-input > input{
+    padding:1em;
+}
+
+.files-input > input {
+    width:15vw;
+}
+
+.files-input > p, .earlyAccess, .earlyAccess-input > p, .footer, li, .footer a {
+    color:white;
+}
+
+.files-input > p, .earlyAccess-input > p {
+    background-color: hsl(224, 93%, 58%);
+    font-size:1em;
+    width:fit-content;
+}
+
+.files-input > p {
+    
+    height: fit-content;
+    padding:0.8em 2em;
+}
+
+.productive-review, .productive-profile {
+    gap:1em;
+}
+
+.productive-review > img, .productive-review > p {
+    margin-bottom:1em;
+}
+
+.links > a ,.footer a{
+    text-decoration: none;
+}
+
+.links > a {
+    color:black;
+}
+.productive {
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.productive-review {
+    background-color: white;
+    width:30vw;
+    padding:2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+}
+
+.productive-content {
+    width:42vw;
+}
+
+
+.productive-profile > img {
+    height:3em;
+    border-radius: 50%;
+}
+
+.earlyAccess {
+    background-color: hsl(238, 22%, 44%);
+}
+
+.earlyAccess-content {
+    width:40vw;
+}
+
+.earlyAccess-input {
+    width:30vw;
+}
+
+.earlyAccess-input > input, .earlyAccess-input > p {
+    border-radius: 3px;
+}
+
+.earlyAccess-input > input {
+    width:25vw;
+    margin-bottom:0.5em;
+}
+
+.earlyAccess-input > p {
+    padding:0.5em 2em;
+}
+
+.footer > img , .footer-socialMedia > img {
+    filter: brightness(0) invert(1);
+}
+
+.footer {
+   background-color: hsl(243, 87%, 12%); 
+}
+
+.footer > img {
+    margin-bottom:1em;
+}
+
+.footer-socialMedia > img  {
+    height:1em;
+    padding:0.5em;
+    border-radius: 50%;
+    border:1px solid white;
+    margin-right:0.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom:1em;
+}
+
+@media screen and (max-width:375px) {
+
+    body {
+        width:fit-content;
+    }
+
+    .files-all, .productive {
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+
+    .files-image {
+        margin-top:10em;
+    }
+
+    .files-content {
+        margin-top: 5em;
+    }
+
+    .files-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .files-input > input, .files-input > p {
+        padding:0;
+        width:100%;
+        padding:1em;
+        border-radius: 0.5em;
+    }
+
+    .files-image, input, .files-content > p, .files-content > h1, .productive-content > h2, .productive-content > p, .productive-content > a {
+        margin-bottom: 0.5em;
+    }
+
+    .productive {
+        
+    }
+
+    .productive-content {
+        width: fit-content;
+    }
+
+    .productive-content > p {
+        text-align: left;
+    }
+
+    .productive-review {
+        width:70%;
+        margin:auto;
+        text-align: left;
+    }
+
+    .earlyAccess {
+        padding:12em 6em;
+        flex-direction: column;
+        text-align:center;
+        gap:4em;
+    }
+
+    .earlyAccess-content {
+        width:fit-content;
+    }
+
+    .earlyAccess-input {
+        width:100vw;
+        margin: auto;
+    }
+
+    .earlyAccess-input > input, .earlyAccess-input > p {
+        padding:0;
+        width:150%;
+        padding:0.5em 3em;
+        
+    }
+
+    .earlyAccess-input > input {
+        margin-left:-9em;
+        margin-bottom:1em;
+    }
+
+    .earlyAccess-input > p {
+        margin-left:-7.5em;
+        padding:0.5em 2.5em;
+    }
+
+}
+
